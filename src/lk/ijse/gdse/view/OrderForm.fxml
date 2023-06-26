@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddOrderFormCOntext" prefHeight="519.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.OrderFormController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="49.0" prefWidth="996.0" style="-fx-background-color: #94B49F;">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" prefHeight="32.0" prefWidth="125.0" text="Add Order" textFill="#fff1f1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblDate" layoutX="787.0" layoutY="71.0" prefHeight="24.0" prefWidth="200.0" text="Date :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="787.0" layoutY="106.0" prefHeight="24.0" prefWidth="200.0" text="Time :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="66.0" prefHeight="32.0" prefWidth="135.0" text="UNCOMMON">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="102.0" prefHeight="32.0" prefWidth="118.0" text="48/10 church Road,">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="134.0" prefHeight="32.0" prefWidth="92.0" text="Rathnapura.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="717.0" layoutY="72.0" text="Time :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="718.0" layoutY="108.0" text="Date :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView layoutX="59.0" layoutY="207.0" prefHeight="200.0" prefWidth="542.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Invoice2" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0e15ac7b-4494-4f1b-b75f-ea4ff1d8f411">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bulb_shop"/>
+	<queryString language="SQL">
+		<![CDATA[select*from orderdetail]]>
+	</queryString>
+	<field name="Did" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Did"/>
+		<property name="com.jaspersoft.studio.field.label" value="Did"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orderdetail"/>
+	</field>
+	<field name="item_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="item_code"/>
+		<property name="com.jaspersoft.studio.field.label" value="item_code"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orderdetail"/>
+	</field>
+	<field name="qty" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="qty"/>
+		<property name="com.jaspersoft.studio.field.label" value="qty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orderdetail"/>
+	</field>
+	<field name="unitPrice" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="unitPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="unitPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orderdetail"/>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{Did}]]></groupExpression>
+		<groupHeader>
+			<band height="38">
+				<line>
+					<reportElement x="-20" y="32" width="595" height="1" forecolor="#666666" uuid="654aafbb-45e0-45a1-b576-d2f6c9c03071"/>
+				</line>
+				<staticText>
+					<reportElement mode="Opaque" x="-15" y="6" width="100" height="32" forecolor="#666666" backcolor="#E6E6E6" uuid="d8716e20-3ea9-4598-aa72-ec7168e6f7d6"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Did]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="110" y="9" width="100" height="20" forecolor="#666666" uuid="a4eb98b3-c96e-4b3e-b1b8-9ca34659a722"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[item_code]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="250" y="9" width="100" height="20" forecolor="#666666" uuid="429050c4-2336-4c83-9d7b-2b4ac3babbb1"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[qty]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="420" y="6" width="100" height="20" forecolor="#666666" uuid="d21fc893-1f9c-4e57-a8d2-dba15e312df9"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[unitPrice]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{item_code}]]></groupExpression>
+		<groupHeader>
+			<band height="41">
+				<textField>
+					<reportElement x="90" y="9" width="120" height="32" forecolor="#006699" uuid="7c77cf0a-fb55-41dc-8c0f-5a9c9c8b619e"/>
+					<textElement>
+						<font size="22" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{item_code}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="260" y="9" width="80" height="32" forecolor="#006699" uuid="2ba027b9-cdc2-4437-8976-9696090f0b23"/>
+					<textElement>
+						<font size="20" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="400" y="9" width="100" height="32" forecolor="#006699" uuid="35c4045d-b334-4019-b5bf-608051de3f73"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{unitPrice}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group3">
+		<groupExpression><![CDATA[$F{qty}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement mode="Opaque" x="-10" y="-32" width="70" height="34" forecolor="#006699" backcolor="#E6E6E6" uuid="2dfefa3f-0655-4194-8c53-8eac3eb46f4c"/>
+					<textElement>
+						<font size="24" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Did}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group4">
+		<groupExpression><![CDATA[$F{unitPrice}]]></groupExpression>
+		<groupHeader>
+			<band height="67"/>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="21a16d1b-03c3-4d16-98c2-290f400b3162"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="8176c16c-9169-4469-80c0-204b7e973dc3"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Invoice]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="9004f98a-3978-4369-8762-4ff4e68eb288"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Uncommon]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="934f8d3f-0fa1-4294-966f-214b745a80d0"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="6ca048ca-1698-46fd-ab0e-f97399939897"/>
+			</line>
+			<textField>
+				<reportElement x="310" y="-6" width="69" height="30" uuid="cd463ee3-dad3-4242-afc1-c495f689e245"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Total :"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="-6" width="100" height="30" uuid="a4fae273-883c-4f0f-8d7f-d62ea588f0ac"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["300"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="0eb21ea9-6206-4632-8031-7e5d217317b1"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="c3bdb85a-3fbf-4864-aaf2-bbbd09af1f3f"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="f44b8593-4970-444f-a113-463e1e49625d"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

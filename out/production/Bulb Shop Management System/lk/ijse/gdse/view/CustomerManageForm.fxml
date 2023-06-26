@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManageCustomerFormContext" prefHeight="519.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.customer.CustomerManageFormController">
+   <children>
+      <JFXButton layoutX="37.0" layoutY="57.0" onAction="#AddCustomeronAction" prefHeight="87.0" prefWidth="204.0" style="-fx-background-color: #59CE8F;" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

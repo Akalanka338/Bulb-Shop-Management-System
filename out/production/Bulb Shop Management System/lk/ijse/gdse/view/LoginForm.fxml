@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginFormContext" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="503.0" fitWidth="792.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/62613629.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="LoginContext" layoutX="518.0" prefHeight="500.0" prefWidth="274.0" style="-fx-background-color: #444941;">
+         <children>
+            <Label layoutX="46.0" layoutY="104.0" prefHeight="51.0" prefWidth="158.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Username" layoutX="34.0" layoutY="225.0" promptText="Username" />
+            <JFXButton layoutX="34.0" layoutY="361.0" onAction="#loginOnAction" prefHeight="32.0" prefWidth="149.0" style="-fx-background-color: #59C1BD;" text="Login">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="Password" layoutX="34.0" layoutY="272.0" promptText="Password" />
+            <Label fx:id="lblMessage" layoutX="34.0" layoutY="319.0" prefHeight="17.0" prefWidth="171.0" textFill="#fc5c5c" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="453.0" prefHeight="17.0" prefWidth="274.0" text="Bulb management System" />
+      <Label layoutX="25.0" layoutY="478.0" prefHeight="17.0" prefWidth="71.0" text="Version 1.1.0" />
+   </children>
+</AnchorPane>

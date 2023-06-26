@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.CashierDashBoardController">
+   <children>
+      <AnchorPane fx:id="DashBoarFormContext" prefHeight="570.0" prefWidth="1200.0">
+         <children>
+            <AnchorPane prefHeight="697.0" prefWidth="233.0" style="-fx-background-color: #3C4048;">
+               <children>
+                  <BorderPane prefHeight="51.0" prefWidth="225.0" style="-fx-background-color: #09acb1;">
+                     <center>
+                        <Label text="Uncommon" textFill="#252424" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </center>
+                  </BorderPane>
+                  <Label layoutX="52.0" layoutY="71.0" prefHeight="17.0" prefWidth="61.0" text="Cashier" textFill="#f5f2f2">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="21.0" fitWidth="33.0" layoutX="5.0" layoutY="71.0">
+                     <image>
+                        <Image url="@../assets/images.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" layoutX="4.0" layoutY="216.0" onAction="#AddOnAction" prefHeight="43.0" prefWidth="218.0" style="-fx-background-color: #bbc5dd;" text="Place Order" textFill="#060707">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="4.0" layoutY="318.0" onAction="#CustomerManageOnAction" prefHeight="43.0" prefWidth="218.0" style="-fx-background-color: #bbc5dd;" text="Manage Customer">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="21.0" layoutY="637.0" onAction="#btnBackOnAction" text="LogOut" textFill="#a1a1a1" />
+               </children>
+            </AnchorPane>
+            <BorderPane layoutX="225.0" prefHeight="51.0" prefWidth="1186.0" style="-fx-background-color: #00ABB3;">
+               <center>
+                  <Label fx:id="lblTime" prefHeight="44.0" prefWidth="325.0" text="2020.22.12" textFill="#fffdfd" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </center></BorderPane>
+            <AnchorPane fx:id="DetailsFormContext" layoutX="233.0" layoutY="51.0" prefHeight="646.0" prefWidth="1178.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
